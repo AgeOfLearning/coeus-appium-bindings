@@ -1,0 +1,13 @@
+language: python
+python:
+- 2.7
+script: python setup.py test
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: dklompmaker
+  on:
+    tags: true
+    repo: AgeOfLearning/coeus-appium-bindings
+  password:
+    secure: Ic21Z7slUyzuGL7TWRyOe52RgLeu9ZgS9uAB2BbYhNDWxpwa6hDKM/ipVfHa51aWXJtDiSP+mFaZQ4pXnUHwlf/HzPJKQ2hHyyeKGSE4jwMGigtsVxpNJ54APY0CK/YrNL33jThHbclJAvVMND+q0NI5ZF4o3fiBNtSAHWCzLyI47lE9uEPSJaoY1DYns4zfapROXUFHGp4qVfDif1tvhcTLgwRjbECplwOBh1RxqngyXPIO0jFWpHCdqDqf9QwB/UOuJ9ctULRRlY02R/qyWS3GMHcxJgUupsxwo4UqwDsmWurJr1sqR3CrnyHJ139+p+P4/FZ7+wYIN5S3SxDsiic5/YdMCcWFjSeRCGeC9K/GIOa6zphK9dQ0g3+/4cqwsY018LI7gjPbVIxblyylSp/CxpTNHB3Lr8jJjj/MiI0kpnVV9jflzUtu7Etwn18zQo8TVGVEP0lM/L4aCb7gSbu+J5HuKEgtI5h9TB2k9CJJepvIIA0QYexc2U1/D4WEU/rtIc1YFqadZ42vLKJk1FrZRZutvZnt5UF19nTmqhE3lBznqJIHdChVBM+Ysp+NxIRDtGpdtBN+W5hHY+y1Bp+c9Hvvf4Chh+k+hn1heiTZM1PI5hoagkDMGZKchWYBruuQ5JPxkKQiuvJ9OUD2nwKyqV1gMLZBp4WkSkS7tqE=
