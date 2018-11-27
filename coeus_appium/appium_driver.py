@@ -1,4 +1,3 @@
-import capabilities
 from appium import webdriver
 
 DEFAULT_TAP_DURATION = 1
@@ -23,8 +22,7 @@ class AppiumDriver:
     def swipe(self, start_x, start_y, end_x, end_y, swipe_duration=DEFAULT_SWIPE_DURATION):
         self.driver.swipe(start_x, start_y, end_x, end_y, swipe_duration)
 
-    def press_key(self, char):
-        keycode = ord(char)
+    def press_key(self, keycode):
         self.driver.press_keycode(keycode)
 
     def setup_android_simulator(self):
