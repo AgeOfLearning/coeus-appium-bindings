@@ -11,9 +11,6 @@ class AppiumDriver:
     driver = None
     capabilities = None
 
-    def __init__(self, platform):
-        self.capabilities = capabilities.get_capabilities(platform)
-
     def connect(self, host=DEFAULT_HOST, port=DEFAULT_PORT):
         self.driver = webdriver.Remote('http://{0}:{1}/wd/hub'.format(host, port), self.capabilities)
 
@@ -29,3 +26,53 @@ class AppiumDriver:
     def press_key(self, char):
         keycode = ord(char)
         self.driver.press_keycode(keycode)
+
+    def setup_android_simulator(self):
+        self.capabilities = {
+            'platformName': 'Android',
+            'deviceName': 'Android Emulator',
+            'autoGrantPermissions': 'true',
+            'automationName': 'UIAutomator2',
+            'newCommandTimeout': 60,
+            'fullReset': 'true'
+        }
+
+    def setup_android_device(self, device_name="device"):
+        self.capabilities = {
+            'platformName': 'Android',
+            'deviceName': device_name,
+            'autoGrantPermissions': 'true',
+            'automationName': 'UIAutomator2',
+            'newCommandTimeout': 60,
+            'fullReset': 'true'
+        }
+
+    def setup_ios_device(self, device_name="device"):
+        self.capabilities = {
+            'platformName': 'iOS',
+            'deviceName': device_name,
+            'autoGrantPermissions': 'true',
+            'automationName': 'XCUITest',
+            'newCommandTimeout': 60,
+            'fullReset': 'true'
+        }
+
+    def setup_iphone_simulator(self):
+        self.capabilities = {
+            'platformName': 'iOS',
+            'deviceName': 'iPhone Simulator',
+            'autoGrantPermissions': 'true',
+            'automationName': 'XCUITest',
+            'newCommandTimeout': 60,
+            'fullReset': 'true'
+        }
+
+    def setup_ipad_simulator(self):
+        self.capabilities = {
+            'platformName': 'iOS',
+            'deviceName': 'iPad Simulator',
+            'autoGrantPermissions': 'true',
+            'automationName': 'XCUITest',
+            'newCommandTimeout': 60,
+            'fullReset': 'true'
+        }

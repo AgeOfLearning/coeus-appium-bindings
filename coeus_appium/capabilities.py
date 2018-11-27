@@ -11,7 +11,7 @@ def get_capabilities(platform):
 def get_android_capabilities():
     caps = {
         'platformName': 'Android',
-        'deviceName': 'device',
+        'deviceName': 'Android Emulator',
         'autoGrantPermissions': 'true',
         'automationName': 'UIAutomator2',
         'newCommandTimeout': 120,
