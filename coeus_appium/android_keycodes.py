@@ -373,7 +373,10 @@ class AndroidKeyCodes:
         '\'': KEYCODE_APOSTROPHE,
         '"': KEYCODE_APOSTROPHE,
         ';': KEYCODE_SEMICOLON,
-        ':': KEYCODE_SEMICOLON
+        ':': KEYCODE_SEMICOLON,
+        '\n': KEYCODE_BREAK,
+        '\r': KEYCODE_ENTER,
+        '\t': KEYCODE_TAB
     }
 
     shift_mappings = [
