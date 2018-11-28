@@ -351,7 +351,7 @@ class AndroidKeyCodes:
         '$': KEYCODE_4,
         '%': KEYCODE_5,
         '^': KEYCODE_6,
-        '&': KEYCODE_8,
+        '&': KEYCODE_7,
         '(': KEYCODE_9,
         ')': KEYCODE_0,
         '/': KEYCODE_SLASH,
