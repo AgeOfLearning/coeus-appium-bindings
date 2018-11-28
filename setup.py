@@ -30,7 +30,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Appium bindings for the coeus-pythong-framework.",
+    description="Appium bindings for the coeus-python-framework.",
     install_requires=required,
     license="BSD 3-Clause License",
     long_description=readme,
@@ -42,6 +42,6 @@ setup(
     setup_requires=setup_requirements,
     tests_require=test_requirements,
     url='https://github.com/AgeOfLearning/coeus-appium-bindings',
-    version='0.1.3',
+    version='0.1.4',
     zip_safe=False,
 )
