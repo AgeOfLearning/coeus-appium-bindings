@@ -382,8 +382,7 @@ class AndroidKeyCodes:
 
     @staticmethod
     def get_keycode_meta_for_char(char):
-        meta = None
         if char in AndroidKeyCodes.shift_mappings or str(char).isupper():
-            meta += AndroidKeyCodes.META_SHIFT_LEFT_ON
+            return AndroidKeyCodes.META_SHIFT_ON
 
-        return meta
+        return None
