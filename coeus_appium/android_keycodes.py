@@ -374,7 +374,7 @@ class AndroidKeyCodes:
         '"': KEYCODE_APOSTROPHE,
         ';': KEYCODE_SEMICOLON,
         ':': KEYCODE_SEMICOLON,
-        '\n': KEYCODE_BREAK,
+        '\n': KEYCODE_ENTER,
         '\r': KEYCODE_ENTER,
         '\t': KEYCODE_TAB
     }
