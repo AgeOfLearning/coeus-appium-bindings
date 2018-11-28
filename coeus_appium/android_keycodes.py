@@ -375,15 +375,15 @@ class AndroidKeyCodes:
 
     @staticmethod
     def get_keycode_for_char(char):
-        if char in AndroidKeyCodes.mappings:
-            return AndroidKeyCodes.mappings[char]
+        if str(char).lower() in AndroidKeyCodes.mappings:
+            return AndroidKeyCodes.mappings[str(char).lower()]
 
         raise Exception("No keycode found for char: {0}".format(char))
 
     @staticmethod
     def get_keycode_meta_for_char(char):
         meta = None
-        if char in AndroidKeyCodes.shift_mappings:
+        if char in AndroidKeyCodes.shift_mappings or str(char).isupper():
             meta += AndroidKeyCodes.META_SHIFT_LEFT_ON
 
         return meta
