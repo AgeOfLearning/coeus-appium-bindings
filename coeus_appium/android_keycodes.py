@@ -359,7 +359,21 @@ class AndroidKeyCodes:
         '<': KEYCODE_COMMA,
         '>': KEYCODE_PERIOD,
         '`': KEYCODE_GRAVE,
-        '~': KEYCODE_GRAVE
+        '~': KEYCODE_GRAVE,
+        '-': KEYCODE_MINUS,
+        '=': KEYCODE_EQUALS,
+        '_': KEYCODE_MINUS,
+        '+': KEYCODE_EQUALS,
+        '[': KEYCODE_LEFT_BRACKET,
+        '{': KEYCODE_LEFT_BRACKET,
+        ']': KEYCODE_RIGHT_BRACKET,
+        '}': KEYCODE_RIGHT_BRACKET,
+        '\\': KEYCODE_BACKSLASH,
+        '|': KEYCODE_BACKSLASH,
+        '\'': KEYCODE_APOSTROPHE,
+        '"': KEYCODE_APOSTROPHE,
+        ';': KEYCODE_SEMICOLON,
+        ':': KEYCODE_SEMICOLON
     }
 
     shift_mappings = [
@@ -370,7 +384,17 @@ class AndroidKeyCodes:
         '&',
         '(',
         ')',
-        '~'
+        '~',
+        '<',
+        '>',
+        '_',
+        '+',
+        '{',
+        '}',
+        '|',
+        '"',
+        '?',
+        ':'
     ]
 
     @staticmethod
