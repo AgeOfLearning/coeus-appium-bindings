@@ -6,6 +6,11 @@
 [![pypi][pypi-build-status]](https://pypi.python.org/pypi/coeus-test-appium)
 [![travis][travis-ci-status]](https://travis-ci.org/AgeOfLearning/coeus-appium-bindings)
 
+## Contributors
+[@dklompmaker](https://github.com/dklompmaker)
+[@copyleftdev](https://github.com/copyleftdev)
+[@KeithPatch](https://github.com/KeithPatch)
+
 ## About
 A set of wrappers to simplify the setup, and usage of appium calls to tap, swip, and send key events. 
 
